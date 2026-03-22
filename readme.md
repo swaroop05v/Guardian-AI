@@ -1,76 +1,146 @@
-# Guardian AI - AI-Driven Public Health Chatbot
+# 🩺 Guardian AI — AI-Powered Health Assistant
 
-**Team:** "Spiderman: Far from Diseases "
-**Problem Statement:** SIH25049 - AI-Driven Public Health Chatbot for Disease Awareness 
-
-Guardian AI is a multilingual health chatbot designed to provide reliable preventive care information, bridging the healthcare gap for rural and semi-urban communities.
-
-## Key Features
-Our platform is packed with features to make public health information accessible and actionable:
-
-- **Multilingual Q&A:** Get instant answers to health questions about symptoms, hygiene, and prevention in multiple languages via text and voice.
-- **Blood Report Analysis:** Upload a blood report for an instant analysis of potential health risks, complete with personalized health tips.
-- **Live Outbreak Alerts:** Receive real-time alerts about local disease outbreaks using data from government databases.
-- **Symptom Checker:** A preliminary assessment tool to help guide users on their next steps for care.
-- **Vaccine Tracker:** Easily manage family immunization schedules and find nearby vaccination camps.
-- **Connected Care:** Directly connect with doctors for teleconsultation through integration with platforms like eSanjeevani.
-- **Interactive Health Quizzes:** Engage with fun quizzes to improve health literacy.
+Guardian AI is an intelligent, healthcare assistant designed to provide **preventive care insights, symptom-based guidance, and blood report analysis** — making healthcare more accessible and actionable.
 
 ---
 
-## Technical Architecture
-Guardian AI is built on a modern, scalable tech stack designed for robust performance and reliability. The system processes user queries through a sophisticated AI/ML pipeline to provide accurate, actionable insights.
+## 🚀 Key Features
 
-Our architecture is composed of the following layers:
-- **Frontend:** A responsive and intuitive user interface built with React.js / Next.js.
-- **Backend:** Scalable and robust APIs powered by Django or FastAPI (Python).
-- **AI/ML Core:**
-  - **Natural Language Understanding:** Pre-trained Large Language Models from Hugging Face provide conversational AI capabilities.
-  - **Intelligent Orchestration:** LangChain connects the language models with medical knowledge bases from trusted sources like WHO and ICMR.
-  - **Predictive Analytics:** Scikit-learn is used to deploy machine learning models for blood report analysis.
+* 🤖 **AI Chat Assistant**
+  Get instant responses to health-related queries using LLM-powered conversational AI
+
+* 🧠 **Symptom-Based Diagnosis**
+  Hybrid system combining rule-based logic + AI to suggest possible conditions
+
+* 🩸 **CBC Report Analysis (ML Model)**
+  Upload your blood report → get automated insights using a trained ML model
+
+* 📊 **Preventive Health Tips**
+  Personalized recommendations to improve health and avoid risks
+
+* 📁 **Past Reports Tracking**
+  Store and review previous reports and analyses
+
+* 💉 **Vaccination Schedule**
+  Track and manage immunization timelines
 
 ---
 
-## Project Impact
-Guardian AI aims to empower communities and strengthen the public health infrastructure in three key ways:
+## 🧠 How It Works
 
-- **Empowering Community Health:** Enables early identification of health risks and provides clear information in local languages, helping users make informed decisions.
-- **Bridging the Healthcare Gap:** Offers 24/7 on-demand access to preliminary health advice, saving families valuable time and money on travel for non-urgent queries.
-- **Strengthening Public Health:** Frees up healthcare workers by handling common questions and acts as an early warning system through outbreak alerts, reducing the strain on the public health system.
+Guardian AI uses a **hybrid intelligence system**:
+
+* 🔍 Rule-based engine for reliable symptom mapping
+* 🤖 LLM (OpenAI) for conversational responses
+* 📊 Machine Learning model for CBC report analysis
+* 🔗 Flask backend serving real-time API responses
+
+This combination ensures both **accuracy and flexibility** in health insights.
 
 ---
 
-## Getting Started
-To get a local copy up and running, follow these simple steps.
+## 🏗️ Tech Stack
 
-**Prerequisites**
+* **Backend:** Python, Flask
+* **AI/ML:** OpenAI API, Scikit-learn
+* **Data Processing:** pandas, numpy
+* **Frontend:** HTML, CSS, JavaScript
+* **Other Tools:** dotenv, REST APIs
 
-- Node.js & npm
-- Python 3.8+ & pip
+---
 
-**Installation**
+## 📸 Screenshots
 
-1. Clone the repo
+### 💬 Chat Interface
+
+![Chat](screenshots/chat.png)
+
+### 🩸 Blood Report Analysis
+
+![Chat](screenshots/analysis.png)
+
+### 💉 Vaccination Schedule
+
+![Chat](screenshots/schedule.png)
+
+### 📁 Past Reports
+
+![Chat](screenshots/past.png)
+
+## ⚙️ Setup
+
+### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/Speedbird-One/Guardian_AI.git
+git clone https://github.com/swaroop05v/Guardian-AI.git
+cd Guardian-AI
 ```
 
-2. Install dependencies
+---
+
+### 2️⃣ Install dependencies
 
 ```bash
-pip install -r requirements.txt`
+pip install -r requirements.txt
 ```
 
-3. Set up environment variables
+---
 
-Create a `.env` file and add your API keys.
+### 3️⃣ Create `.env` file
 
-4. Run the application
+```env
+OPENAI_API_KEY=your_api_key_here
+```
 
-Start the backend server: `python server.py`
+---
 
-Open the frontend: `html/index.html`
+### 4️⃣ Run the server
 
-## License
-This project is distributed under the MIT License. See `LICENSE.txt` for more information.
+```bash
+python server.py
+```
+
+---
+
+### 5️⃣ Open in browser
+
+```
+http://127.0.0.1:5000
+```
+
+---
+
+## 📂 Project Structure
+
+```bash
+Guardian-AI/
+ ├── data/
+ ├── html/
+ ├── models/
+ ├── chatbot.py
+ ├── server.py
+ ├── train_cbc_model.py
+ ├── requirements.txt
+ ├── screenshots/
+ └── .env
+```
+
+---
+
+## 🔮 Future Improvements
+
+* 🧑‍⚕️ Doctor consultation integration
+* 📱 Mobile app version
+* 🧠 Advanced deep learning models for diagnosis
+
+---
+
+## ⚠️ Disclaimer
+
+Guardian AI provides AI-based health insights and is **not a substitute for professional medical advice**.
+
+##
+
+---
+
+⭐ *Building technology that makes healthcare smarter and more accessible*
